@@ -1,0 +1,93 @@
+.Subscribe {
+  margin: 0 0 32px;
+
+  &-title {
+    margin: 0 0 13px;
+
+    font-family: 'SF UI Text Medium';
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: -0.38px;
+    color: #212529;
+    opacity: 0.9;
+  }
+
+  &-colInput {
+    margin: 0 0 12px;
+  }
+
+  &-input {
+    display: block;
+    width: 100%;
+    min-height: 44px;
+    margin: 0;
+    padding: 9px 18px;
+
+    font-family: 'SF UI Text Regular';
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.6px;
+    color: #161515;
+
+    border-radius: 4px;
+    border: 1px solid #979797;
+
+    &::placeholder {
+      font-family: 'SF UI Text Regular';
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.6px;
+      color: #161515;
+      opacity: 0.48;
+    }
+
+    &:focus,
+    &:hover {
+      outline: 0;
+    }
+  }
+
+  &-colBtn {
+    margin: 0;
+    & .Button {
+      margin: 0;
+      & span {
+        font-weight: bold;
+      }
+    }
+  }
+
+  @media (min-width: 560px) {
+    &-title {
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    &-row {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    &-colInput,
+    &-colBtn {
+      position: relative;
+      flex: 0 0 auto;
+    }
+
+    &-colInput {
+      margin: 0;
+    }
+
+    &-input {
+      display: block;
+      width: 320px;
+      max-width: 100%;
+    }
+
+    &-colBtn {
+      margin: 0 0 0 34px;
+    }
+  }
+}

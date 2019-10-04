@@ -1,0 +1,104 @@
+.Home {
+  position: relative;
+  .page-item.active .page-link {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: #000000;
+  }
+  .page-link {
+    color: #000000;
+  }
+  .page-link:focus {
+    -webkit-box-shadow: 0 0 0 0 rgba(0,123,255,.25);
+    box-shadow: 0 0 0 0 rgba(0,123,255,.25);
+  }
+  &-wrapper {
+    position: relative;
+    max-width: 992px;
+    margin: 0 auto;
+    padding: 22px 15px;
+  }
+
+  &-pagination-ellipsis {
+    line-height: 28px;
+  }
+
+  &-colTitle {
+    margin: 0 0 24px;
+
+    font-family: 'SF UI Text Medium';
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -0.4px;
+    text-align: center;
+    color: #212529;
+  }
+
+  &-colCases {
+    position: absolute;
+    display: none;
+    visibility: hidden;
+  }
+
+  @media (min-width: 740px) {
+    &-appsList {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: start;
+      margin: 0 -25px;
+
+      & .AppCard {
+        flex: 0 0 321px;
+        width: 321px;
+        max-width: 321px;
+        margin: 0 24px 31px;
+      }
+      & .AppCard-body {
+        height: 110px;
+        max-height: 110px;
+        overflow: hidden;
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    &-devider {
+      height: 1px;
+
+      background: #e1e1e1;
+    }
+
+    &-wrapper {
+      padding: 32px 15px;
+    }
+
+    &-inner {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+
+    &-colTitle {
+      font-size: 20px;
+      line-height: 24px;
+      text-align: left;
+    }
+
+    &-colCases {
+      position: relative;
+      display: block;
+      flex: 0 0 237px;
+      padding: 0 15px;
+
+      visibility: visible;
+    }
+
+    &-colCards {
+      position: relative;
+      flex: 1 1 auto;
+      padding: 0 15px;
+    }
+  }
+}

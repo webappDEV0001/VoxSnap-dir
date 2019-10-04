@@ -1,0 +1,10 @@
+Django>=2.2.2
+Scrapy>=1.6.0
+beautifulsoup4>=4.7.1
+dateparser>=0.7.1
+djangorestframework>=3.10.2
+html5lib>=1.0.1
+psycopg2>=2.8.3
+requests>=2.22.0
+scrapy-djangoitem>=1.1.1
+scrapy-jsonrpc@ https://github.com/robd003/scrapy-jsonrpc/archive/v0.3.6.zip

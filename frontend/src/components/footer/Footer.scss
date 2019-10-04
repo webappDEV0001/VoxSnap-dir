@@ -1,0 +1,86 @@
+.Footer {
+  position: relative;
+  padding: 53px 19px 44px;
+
+  background: #fff;
+  border-top: 1px solid #e1e1e1;
+
+  &-wrapper {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  &-links {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 26px;
+
+    & a {
+      flex: 0 0 auto;
+      font-size: 0;
+      margin: 0 12px;
+
+      transition: opacity 250ms ease-in;
+
+      &:focus,
+      &:hover {
+        opacity: .75;
+        text-decoration: none;
+        outline: 0;
+      }
+    }
+  }
+
+  &-mail {
+    margin: 0 0 27px;
+    padding: 0 12px;
+  }
+
+  &-mailContent {
+    font-family: 'SF UI Text Regular';
+    font-size: 16px;
+    line-height: 24px;
+    color: #212529;
+    text-align: center;
+
+    & a {
+      color: #dc3545;
+      text-decoration: none;
+      transition: opacity 250ms ease-in;
+
+      &:focus,
+      &:hover {
+        opacity: .75;
+        text-decoration: none;
+        outline: 0;
+      }
+    }
+  }
+
+  &-info {
+    font-family: 'SF UI Text Regular';
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: #212529;
+
+    & img {
+      vertical-align: middle;
+      margin: 0 2px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    padding: 35px 19px 41px;
+
+    &-links {
+      margin: 0 0 31px;
+    }
+
+    &-mail {
+      margin: 0 0 32px;
+    }
+  }
+}

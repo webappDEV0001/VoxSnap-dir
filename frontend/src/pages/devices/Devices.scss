@@ -1,0 +1,164 @@
+.Devices {
+  position: relative;
+  .page-item.active .page-link {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: #000000;
+  }
+  .page-link {
+    color: #000000;
+  }
+  .page-link:focus {
+    -webkit-box-shadow: 0 0 0 0 rgba(0,123,255,.25);
+    box-shadow: 0 0 0 0 rgba(0,123,255,.25);
+  }
+  &-wrapper {
+    position: relative;
+    max-width: 992px;
+    margin: 0 auto;
+    padding: 29px 15px 0;
+  }
+
+  &-banner {
+    margin: 0 0 43px;
+  }
+  &-bannerTitle {
+    margin: 0 0 11px;
+
+    font-family: 'SF UI Text Medium';
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    letter-spacing: -0.4px;
+    color: #212529;
+    opacity: 0.9;
+  }
+  &-bannerCover {
+    margin: 0 -15px 17px;
+
+    & img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  &-bannerLink {
+    text-align: center;
+  }
+
+  &-title {
+    margin: 0 0 18px;
+
+    font-family: 'SF UI Text Medium';
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    letter-spacing: -0.4px;
+    color: #212529;
+    opacity: 0.9;
+  }
+
+  &-group {
+    margin: 0 0 95px;
+  }
+
+  &-groupLogo {
+    margin: 0 0 32px;
+    text-align: center;
+  }
+
+  @media (min-width: 640px) {
+    &-wrapper {
+      padding: 50px 30px 0;
+    }
+
+    &-banner {
+      margin: 0 0 63px;
+    }
+    &-bannerTitle {
+      margin: 0 0 22px;
+
+      font-size: 32px;
+      line-height: 38px;
+    }
+    &-bannerCover {
+      margin: 0 -30px 22px;
+    }
+
+    &-title {
+      margin: 0 0 40px;
+
+      font-size: 32px;
+      line-height: 38px;
+    }
+
+    &-group {
+      margin: 0 0 110px;
+    }
+
+    &-groupLogo {
+      margin: 0 0 39px 322px;
+      text-align: left;
+    }
+  }
+}
+
+.DeviceCard {
+  position: relative;
+  max-width: 290px;
+  margin: 0 auto 32px;
+
+  &-thumb {
+    position: relative;
+    margin: 0 0 32px;
+
+    font-size: 0;
+    text-align: center;
+
+    & img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &-content {
+    position: relative;
+  }
+
+  &-title {
+    margin: 0 0 16px;
+
+    font-family: 'SF UI Text Regular';
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.4px;
+    color: #212529;
+  }
+
+  &-desc {
+    margin: 0 0 16px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.3px;
+    text-align: justify;
+    color: #212529;
+  }
+
+  @media (min-width: 640px) {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: none;
+    margin: 0 0 32px;
+
+    &-thumb {
+      flex: 0 0 290px;
+      max-width: 290px;
+      margin: 0 32px 0 0;
+    }
+
+    &-content {
+      flex: 1 1 auto;
+    }
+  }
+}

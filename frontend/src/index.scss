@@ -1,0 +1,125 @@
+@font-face {
+  font-family: 'SF UI Text Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SF UI Text Regular'), url('./media/fonts/SFUIText-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'SF UI Text Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SF UI Text Medium'), url('./media/fonts/SFUIText-Medium.woff') format('woff');
+}
+
+@import-normalize;
+@import '~rc-select/assets/index.css';
+@import '~rc-rate/assets/index.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'SF UI Text Regular', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.rc-select.RcSelect {
+  display: block;
+  width: 100%;
+  margin: 0;
+
+  font-family: 'SF UI Text Regular';
+  font-size: 16px;
+  line-height: 40px;
+  color: rgba(0, 0, 0, 0.65);
+
+  &::placeholder {
+    font-family: 'SF UI Text Regular';
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.65);
+  }
+
+  & .rc-select-selection {
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    border: 0;
+    background: #fff;
+  }
+
+  & .rc-select-selection__rendered {
+    height: 40px;
+    margin: 0 28px 0 12px;
+    line-height: 40px;
+  }
+
+  & .rc-select-arrow {
+    top: 7px;
+    right: 6px;
+  }
+
+  & .rc-select-selection__placeholder {
+    font-family: 'SF UI Text Regular';
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.65);
+  }
+}
+.rc-select-dropdown {
+  box-shadow: 0 0 2px 3px rgba(0, 0, 0, .1);
+  border: 0 !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+}
+
+.rc-select-dropdown-menu {
+  max-height: 500px !important;
+  overflow-y: auto !important;
+  overflow-x: auto !important;
+}
+
+.rc-rate.RcRate {
+  font-size: 15px;
+  line-height: 13px;
+
+  .rc-rate-star {
+    margin-right: 4px;
+    line-height: 13px;
+    color: #c5cad4;
+    cursor: default;
+    outline: 0;
+    &:focus,
+    &:hover {
+      outline: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .rc-rate-star-half .rc-rate-star-first,
+  .rc-rate-star-full .rc-rate-star-second {
+    color: #f9362d;
+    opacity: 0.8;
+    outline: 0;
+  }
+
+  .rc-rate-star-half:hover .rc-rate-star-first,
+  .rc-rate-star-full:hover .rc-rate-star-second {
+    color: #f9362d;
+    opacity: 0.8;
+    outline: 0;
+  }
+}
